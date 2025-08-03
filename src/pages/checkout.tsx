@@ -35,7 +35,7 @@ const CheckoutPage = () => {
       currency: 'INR',
       name: 'My Store',
       description: 'Order Payment',
-      handler: async function (response: any) {
+handler: async function (_: any) {
         const orderPayload = {
           billing,
           line_items: cart.map((item) => ({
