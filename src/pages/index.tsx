@@ -1,12 +1,7 @@
 
 import { useState } from 'react';
 
-interface Product {
-  id: number;
-  name: string;
-  images: { src: string }[];
-  price_html: string;
-}
+
 
 interface Category {
   id: number;
