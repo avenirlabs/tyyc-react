@@ -1,5 +1,5 @@
 
-import type { NextApiRequest, NextApiResponse } from 'next';
+import type { NextApiResponse } from 'next';
 import api from '@/lib/woocommerce';
 
 export default async function handler(_, res: NextApiResponse) {
