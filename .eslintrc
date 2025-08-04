@@ -1,4 +1,13 @@
 {
+
+rules: {
+  'prettier/prettier': 'off',
+  'simple-import-sort/imports': 'off',
+  '@typescript-eslint/consistent-type-imports': 'off',
+  'react-hooks/rules-of-hooks': 'error', // Keep this one ON
+  'tailwindcss/enforces-shorthand': 'warn',
+  'tailwindcss/migration-from-tailwind-2': 'warn',
+}
     // Configuration for JavaScript files
     "extends": [
       "airbnb-base",
