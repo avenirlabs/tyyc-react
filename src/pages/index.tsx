@@ -10,7 +10,7 @@ export default function HomePage() {
 
   const fetchProducts = async (categoryId?: number) => {
     setLoading(true);
-    const url = categoryId ? \`/api/products?category=\${categoryId}\` : '/api/products';
+const url = categoryId ? `/api/products?category=${categoryId}` : '/api/products';
     const res = await fetch(url);
     const data = await res.json();
     setProducts(data);
