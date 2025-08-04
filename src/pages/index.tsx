@@ -8,6 +8,7 @@ interface Product {
   id: number;
   name: string;
   images: { src: string }[];
+  price_html: string; 
 }
 
 const [products, setProducts] = useState<Product[]>([]);
