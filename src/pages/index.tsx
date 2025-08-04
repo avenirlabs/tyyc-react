@@ -13,10 +13,11 @@ interface Product {
 
 const [products, setProducts] = useState<Product[]>([]);
 
-const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
 
 
 export default function HomePage() {
+  const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
+
   const [loading, setLoading] = useState(true);
 const [categories, setCategories] = useState<Category[]>([]);
 
