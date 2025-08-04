@@ -1,6 +1,9 @@
 
 import { useState, useEffect } from 'react';
-
+interface Category {
+  id: number;
+  name: string;
+}
 
 const [products, setProducts] = useState([]);
 
