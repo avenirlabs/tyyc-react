@@ -12,7 +12,7 @@ const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
 
 export default function HomePage() {
   const [_, setLoading] = useState(true);
-const [categories, setCategories] = useState([]);
+const [categories, setCategories] = useState<Category[]>([]);
 
   const fetchProducts = async (categoryId?: number) => {
     setLoading(true);
