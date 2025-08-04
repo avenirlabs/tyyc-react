@@ -3,13 +3,9 @@ import { useState } from 'react';
 
 
 
-interface Category {
-  id: number;
-  name: string;
-}
+
 
 export default function HomePage() {
-  const [categories, setCategories] = useState<Category[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
 
