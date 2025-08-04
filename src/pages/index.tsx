@@ -1,9 +1,10 @@
-
 import { useState, useEffect } from 'react';
+
 interface Category {
   id: number;
   name: string;
 }
+
 interface Product {
   id: number;
   name: string;
@@ -11,19 +12,15 @@ interface Product {
   price_html: string; 
 }
 
-const [products, setProducts] = useState<Product[]>([]);
-
-
-
 export default function HomePage() {
   const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
-
   const [loading, setLoading] = useState(true);
-const [categories, setCategories] = useState<Category[]>([]);
+  const [categories, setCategories] = useState<Category[]>([]);
+  const [products, setProducts] = useState<Product[]>([]);  // ✅ Moved inside the component
 
   const fetchProducts = async (categoryId?: number) => {
     setLoading(true);
-const url = categoryId ? `/api/products?category=${categoryId}` : '/api/products';
+    const url = categoryId ? `/api/products?category=${categoryId}` : '/api/products';
     const res = await fetch(url);
     const data = await res.json();
     setProducts(data);
