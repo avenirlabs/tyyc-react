@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 
 export default function HomePage() {
-  const [loading, setLoading] = useState(true);
+  const [_, setLoading] = useState(true);
 
   const fetchProducts = async (categoryId?: number) => {
     setLoading(true);
