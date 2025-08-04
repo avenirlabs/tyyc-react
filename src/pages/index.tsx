@@ -4,8 +4,13 @@ interface Category {
   id: number;
   name: string;
 }
+interface Product {
+  id: number;
+  name: string;
+  images: { src: string }[];
+}
 
-const [products, setProducts] = useState([]);
+const [products, setProducts] = useState<Product[]>([]);
 
 const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
 
