@@ -8,6 +8,7 @@ const [products, setProducts] = useState([]);
 
 export default function HomePage() {
   const [_, setLoading] = useState(true);
+const [categories, setCategories] = useState([]);
 
   const fetchProducts = async (categoryId?: number) => {
     setLoading(true);
