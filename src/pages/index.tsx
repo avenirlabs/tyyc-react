@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 
 const [products, setProducts] = useState([]);
 
+const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
 
 
 export default function HomePage() {
