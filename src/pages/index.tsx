@@ -56,7 +56,7 @@ const url = categoryId ? `/api/products?category=${categoryId}` : '/api/products
         <p>Loading products...</p>
       ) : (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {products.map((product.id) => (
+          {products.map((product) => (
             <div key={product.id} className="border rounded-lg p-4 shadow hover:shadow-lg transition">
               <img
                 src={product.images[0]?.src || '/placeholder.jpg'}
